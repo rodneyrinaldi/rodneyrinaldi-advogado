@@ -1,63 +1,66 @@
-// Importando os módulos necessários
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
-// Definindo o componente
 const Componente = () => {
-  // Definindo o estado isMobile usando o hook useState
   const [isMobile, setIsMobile] = useState(false)
 
-  // Definindo uma função para atualizar o estado isMobile de acordo com a largura da janela
   const handleResize = () => {
-    // Se a largura da janela for menor que 900px, isMobile será true
     if (window.innerWidth < 900) {
       setIsMobile(true)
     } else {
-      // Caso contrário, isMobile será false
       setIsMobile(false)
     }
   }
 
-  // Usando o hook useEffect para executar a função handleResize quando o componente for montado e quando a janela for redimensionada
-  useEffect(() => {
-    // Executando a função handleResize uma vez quando o componente for montado
+   useEffect(() => {
     handleResize()
-    // Adicionando um evento de redimensionamento da janela que chama a função handleResize
     window.addEventListener('resize', handleResize)
-    // Retornando uma função de limpeza que remove o evento de redimensionamento da janela
     return () => {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
 
-  // Definindo o estilo do componente usando tailwind
   const estilo = `h-screen w-screen bg-blue-100 flex flex-col justify-center items-center
-  ${isMobile ? 'p-6' : 'p-10 max-w-screen-md mx-auto'} shadow-lg`
-  const logo = `${isMobile ? '/imagemobi.jpeg' : '/image.jpeg'}`
+                  ${isMobile ? 'p-6' : 'p-10 max-w-screen-md mx-auto'} shadow-lg`
 
-  // Retornando o JSX do componente
   return (
-    <div className={estilo}>
-      {/* Header com título */}
+    <>
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-black">Título do Componente</h1>
+        <div className="pt-8 px-20">
+          {isMobile ? 
+            <Image src='/logoadv.png' alt="Imagem" width={206} height={57} />
+          : 
+            <Image src='/logoadv.png' alt="Imagem" width={825} height={380} />
+          }
+          
+          
+          {/* <Image src='/title.png' alt="Imagem" width={194} height={84} /> */}
+          {/* <Image src='/title.png' alt="Imagem" width={779} height={211} /> */}
+          {/* <Image src='/logo.png' alt="Imagem" width={54} height={54} /> */}
+          {/* <Image src='/logo.png' alt="Imagem" width={1085} height={1081} /> */}
+        </div>
       </div>
-      {/* Imagem centralizada */}
-      <div className="my-8">
-        <Image src={logo} alt="Imagem" width={1011} height={716} />
-      </div>
-      {/* Menu horizontal com duas opções */}
+
+      {isMobile ? 
+        <div className="my-8">
+          <Image src='/image.png' alt="Imagem" width={1011} height={716} />
+        </div>
+       : 
+        <div className="my-8">
+          <Image src='/image2.png' alt="Imagem" width={1000} height={893} />
+        </div>
+       }
+
       <div className="flex justify-center space-x-4">
         <button className="bg-blue-500 text-white px-4 py-2 rounded">Opção 1</button>
         <button className="bg-blue-500 text-white px-4 py-2 rounded">Opção 2</button>
       </div>
-      {/* Footer centralizado */}
+
       <div className="text-center">
         <p className="text-sm text-black">© Copilot 2024</p>
       </div>
-    </div>
+    </>
   )
 }
 
-// Exportando o componente
 export default Componente
