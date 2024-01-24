@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const Componente = () => {
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false) 
+  const wapp = "https://api.whatsapp.com/send?phone=+5511912227040&text=Olá, preciso de orientações sobre:";
   const estilo = `h-screen w-screen bg-blue-100 flex flex-col justify-center items-center
                   ${isMobile ? 'p-6' : 'p-10 max-w-screen-md mx-auto'} shadow-lg`
   
@@ -54,21 +55,23 @@ const Componente = () => {
           <Image src='/image3.png' alt="Imagem" width={1011} height={716} />
         </div>
 
-        <div className="flex justify-center space-x-4 p-4 bg-white shadow-md">
+        <div className="flex justify-center space-x-4 py-4 bg-white shadow-md">
           <h1 className="text-2xl text-blue-700">Rodney Rinaldi 
             <span className="pl-2 text-xs font-bold text-blue-700">ADVOGADO</span>
           </h1>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
-          <h2 className="text-white px-10">Enfrentando questões legais? Você não está sozinho. Como posso ajudá-lo? 
-                                           Me envie uma mensagem privada.</h2>
+          <h2 className="text-white text-base px-10">Enfrentando questões legais? Você não está sozinho, como posso ajudá-lo?</h2>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
-          <button className="bg-transparent border border-white py-2 px-2 rounded-full">
-            <h2 className="text-white px-10">MANDE SUA MENSAGEM</h2>
-          </button>
+        <a href={wapp} target="_blank" rel="noreferrer">
+            <button className="flex justify-center px-10 bg-transparent border border-white py-2 rounded-full">
+              <h2 className="text-white pr-3 font-semibold">MANDE SUA MENSAGEM</h2>
+              <Image src='/whatsapp.png' alt="Imagem" width={24} height={24} />
+            </button>
+          </a>
         </div>
 
         <div className="text-center p-6">
