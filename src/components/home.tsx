@@ -35,11 +35,11 @@ const Componente = () => {
   const monitorComponent = () => {
     return(
       <>
-        <div className="flex justify-center space-x-4 py-0 bg-white">
+        <div className="flex justify-center space-x-4 py-8 bg-white">
           <Image src='/image3.png' alt="Imagem" width={505} height={358} />
         </div>
 
-        <div className="flex justify-center space-x-4 py-8 bg-white">
+        <div className="flex justify-center space-x-4 pb-4 bg-white">
           <h1 className="font-nunito text-4xl text-slate-900">Rodney Rinaldi 
             <span className="pl-2 text-lg font-bold text-slate-900">ADVOGADO</span>
           </h1>
@@ -58,7 +58,7 @@ const Componente = () => {
           </a>
         </div>
 
-        <div className="text-center pt-20">
+        <div className="text-center pt-16">
           <p className="text-xl text-slate-800">OAB 417.198 SP  |  <span className="text-xl"><a href={"#"} target="_blank" rel="noreferrer" onClick={handleEmailClick}>advogado@rodneyrinaldi.com</a></span></p>
         </div>
       </>
