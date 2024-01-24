@@ -55,14 +55,14 @@ const Componente = () => {
           <Image src='/image3.png' alt="Imagem" width={1011} height={716} />
         </div>
 
-        <div className="flex justify-center space-x-4 py-4 bg-white shadow-md">
-          <h1 className="text-2xl text-blue-700">Rodney Rinaldi 
-            <span className="pl-2 text-xs font-bold text-blue-700">ADVOGADO</span>
+        <div className="flex justify-center space-x-4 py-3 bg-white border-b border-slate-700 shadow-2xl">
+          <h1 className="font-nunito text-2xl text-slate-900">Rodney Rinaldi 
+            <span className="pl-2 text-xs font-bold text-slate-900">ADVOGADO</span>
           </h1>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
-          <h2 className="text-white text-base px-10">Enfrentando questões legais? Você não está sozinho, como posso ajudá-lo?</h2>
+          <h2 className="text-white text-base px-10 text-justify">Tem assuntos legais para resolver? Você não está sozinho, como posso ajudá-lo?</h2>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
@@ -74,8 +74,8 @@ const Componente = () => {
           </a>
         </div>
 
-        <div className="text-center p-6">
-          <p className="text-sm text-black">© rodneyrinaldi</p>
+        <div className="text-center pt-8">
+          <p className="text-sm text-slate-800">OAB 417.198 SP  |  <span className="text-base">advogado@rodneyrinaldi.com</span></p>
         </div>
       </>
     )
