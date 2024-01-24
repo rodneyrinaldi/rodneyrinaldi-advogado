@@ -23,35 +23,52 @@ const Componente = () => {
     }
   }
 
+  const handleEmailClick = () => {
+    const enderecoEmail = 'advogado@rodneyrinaldi.com';
+    const assuntoEmail = 'Enviado pelo site advogado.rodneyrinaldi.com';
+    const corpoEmail = '...';
+
+    const url = `mailto:${enderecoEmail}?subject=${encodeURIComponent(assuntoEmail)}&body=${encodeURIComponent(corpoEmail)}`;
+    window.open(url, '_blank');
+  };
+
   const monitorComponent = () => {
     return(
-            <>
-            <div className="text-center">
-              <div className="pt-8 px-20">
-                <Image src='/logoadv.png' alt="Imagem" width={825} height={380} /> 
-              </div>
-            </div>
+      <>
+        <div className="flex justify-center space-x-4 py-0 bg-white">
+          <Image src='/image3.png' alt="Imagem" width={505} height={358} />
+        </div>
 
-            <div className="my-8">
-              <Image src='/image2.png' alt="Imagem" width={1000} height={893} />
-            </div>
+        <div className="flex justify-center space-x-4 py-8 bg-white">
+          <h1 className="font-nunito text-4xl text-slate-900">Rodney Rinaldi 
+            <span className="pl-2 text-lg font-bold text-slate-900">ADVOGADO</span>
+          </h1>
+        </div>
 
-            <div className="flex justify-center space-x-4">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded">Opção 1</button>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded">Opção 2</button>
-            </div>
+        <div className="flex justify-center space-x-4 mt-6">
+          <h2 className="text-white text-2xl py-6 px-10 text-justify">Tem assuntos legais para resolver? Você não está sozinho, como posso ajudá-lo?</h2>
+        </div>
 
-            <div className="text-center">
-              <p className="text-sm text-black">© Copilot 2024</p>
-            </div>
-          </>
+        <div className="flex justify-center space-x-4 mt-6">
+        <a href={wapp} target="_blank" rel="noreferrer">
+            <button className="flex justify-center px-10 bg-transparent border border-white py-2 rounded-full transition duration-500 hover:bg-blue-900 hover:opacity-60">
+              <h2 className="text-white text-2xl pr-3 font-semibold">MANDE SUA MENSAGEM</h2>
+              <Image src='/whatsapp.png' alt="Imagem" width={30} height={30} />
+            </button>
+          </a>
+        </div>
+
+        <div className="text-center pt-20">
+          <p className="text-xl text-slate-800">OAB 417.198 SP  |  <span className="text-xl"><a href={"#"} target="_blank" rel="noreferrer" onClick={handleEmailClick}>advogado@rodneyrinaldi.com</a></span></p>
+        </div>
+      </>
     )
   }
   
   const mobileComponent = () => {  
     return(
       <>
-        <div className="py-0">
+        <div className="flex justify-center space-x-4 py-0 bg-white border-b border-slate-700 shadow-2xl">
           <Image src='/image3.png' alt="Imagem" width={1011} height={716} />
         </div>
 
@@ -75,7 +92,7 @@ const Componente = () => {
         </div>
 
         <div className="text-center pt-8">
-          <p className="text-sm text-slate-800">OAB 417.198 SP  |  <span className="text-base">advogado@rodneyrinaldi.com</span></p>
+          <p className="text-sm text-slate-800">OAB 417.198 SP  |  <span className="text-base"><a href={"#"} target="_blank" rel="noreferrer" onClick={handleEmailClick}>advogado@rodneyrinaldi.com</a></span></p>
         </div>
       </>
     )
