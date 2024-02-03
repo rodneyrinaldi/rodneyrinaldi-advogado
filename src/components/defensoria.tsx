@@ -50,7 +50,7 @@ const Componente = () => {
               <Image src='/image4.png' alt="Imagem" width={60} height={60} className="rounded-full" />
             </div>
             <div className="bg-gray-200 p-3 rounded-lg">
-              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Não foi atendido pela defensoria pública, você não está sozinho, como posso ajudá-lo?</p>
+              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Não foram atendidos pela defensoria pública, você não está sozinho, como posso ajudá-los?</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Componente = () => {
     return(
       <>
         <div className="flex justify-center space-x-4 py-0 bg-white border-b border-slate-700 shadow-2xl">
-          <Image src='/alimentos.png' alt="Imagem" width={1011} height={716} />
+          <Image src='/defensoria.png' alt="Imagem" width={1011} height={716} />
         </div>
 
         <div className="flex justify-center space-x-4 py-3 bg-white border-b border-slate-700 shadow-2xl">
@@ -89,7 +89,7 @@ const Componente = () => {
               <Image src='/image4.png' alt="Imagem" width={90} height={90} className="rounded-full" />
             </div>
             <div className="bg-gray-200 p-3 rounded-lg">
-              <p className="font-nunito text-base text-gray-800 text-justify hyphenate">Não foi atendido pela defensoria pública, você não está sozinho, como posso ajudá-lo?</p>
+              <p className="font-nunito text-base text-gray-800 text-justify hyphenate">Não foram atendidos pela defensoria pública, você não está sozinho, como posso ajudá-los?</p>
             </div>
           </div>
         </div>
