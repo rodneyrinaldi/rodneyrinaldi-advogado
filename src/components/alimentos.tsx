@@ -50,7 +50,7 @@ const Componente = () => {
               <Image src='/image4.png' alt="Imagem" width={60} height={60} className="rounded-full" />
             </div>
             <div className="bg-gray-200 p-3 rounded-lg">
-              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Assuntos legais para resolver, você não está sozinho, como posso ajudá-lo?</p>
+              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Pensões não estão sendo pagas, você não está sozinha, como posso ajudá-lo?</p>
             </div>
           </div>
         </div>
