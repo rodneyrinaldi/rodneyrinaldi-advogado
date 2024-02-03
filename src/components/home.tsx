@@ -40,26 +40,32 @@ const Componente = () => {
         </div>
 
         <div className="flex justify-center space-x-4 pb-4 bg-white">
-          <h1 className="font-nunito text-4xl text-slate-900">Rodney Rinaldi 
-            <span className="pl-2 text-lg font-bold text-slate-900">ADVOGADO</span>
+          <h1 className="font-nunito text-4xl text-slate-900">Advogado Rodney Rinaldi
           </h1>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
-          <h2 className="text-white text-2xl py-6 px-10 text-justify">Tem assuntos legais para resolver? Você não está sozinho, como posso ajudá-lo?</h2>
+          <div className="flex items-center p-4">
+            <div className="rounded-full overflow-hidden mr-4">
+              <Image src='/image4.png' alt="Imagem" width={60} height={60} className="rounded-full" />
+            </div>
+            <div className="bg-gray-200 p-3 rounded-lg">
+              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Assuntos legais para resolver, você não está sozinho, como posso ajudá-lo?</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
         <a href={wapp} target="_blank" rel="noreferrer">
             <button className="flex justify-center px-10 bg-transparent border border-white py-2 rounded-full transition duration-500 hover:bg-blue-900 hover:opacity-60">
-              <h2 className="text-white text-2xl pr-3 font-semibold">MANDE SUA MENSAGEM</h2>
+              <h2 className="text-white text-2xl pr-3">Vamos conversar</h2>
               <Image src='/whatsapp.png' alt="Imagem" width={30} height={30} />
             </button>
           </a>
         </div>
 
         <div className="text-center pt-16">
-          <p className="text-xl text-slate-800">OAB 417.198 SP  |  <span className="text-xl"><a href={"#"} target="_blank" rel="noreferrer" onClick={handleEmailClick}>advogado@rodneyrinaldi.com</a></span></p>
+          <p className="text-xl text-slate-800">OAB 417.198 SP<span className='px-8'>|</span><span className="text-xl"><a href={"#"} target="_blank" rel="noreferrer" onClick={handleEmailClick}>advogado@rodneyrinaldi.com</a></span></p>
         </div>
       </>
     )
@@ -73,19 +79,25 @@ const Componente = () => {
         </div>
 
         <div className="flex justify-center space-x-4 py-3 bg-white border-b border-slate-700 shadow-2xl">
-          <h1 className="font-nunito text-2xl text-slate-900">Rodney Rinaldi 
-            <span className="pl-2 text-xs font-bold text-slate-900">ADVOGADO</span>
+          <h1 className="font-nunito text-2xl text-slate-900">Advogado Rodney Rinaldi
           </h1>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
-          <h2 className="text-white text-base px-10 text-justify">Tem assuntos legais para resolver? Você não está sozinho, como posso ajudá-lo?</h2>
+          <div className="flex items-center p-4">
+            <div className="rounded-full overflow-hidden mr-4">
+              <Image src='/image4.png' alt="Imagem" width={90} height={90} className="rounded-full" />
+            </div>
+            <div className="bg-gray-200 p-3 rounded-lg">
+              <p className="font-nunito text-base text-gray-800 text-justify hyphenate">Assuntos legais para resolver, você não está sozinho, como posso ajudá-lo?</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center space-x-4 mt-6">
         <a href={wapp} target="_blank" rel="noreferrer">
             <button className="flex justify-center px-10 bg-transparent border border-white py-2 rounded-full">
-              <h2 className="text-white pr-3 font-semibold">MANDE SUA MENSAGEM</h2>
+              <h2 className="text-xl text-white pr-3">Vamos conversar</h2>
               <Image src='/whatsapp.png' alt="Imagem" width={24} height={24} />
             </button>
           </a>
