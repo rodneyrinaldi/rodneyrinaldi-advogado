@@ -36,7 +36,7 @@ const Componente = () => {
     return(
       <>
         <div className="flex justify-center space-x-4 py-8 bg-white">
-          <Image src='/loas.png' alt="Imagem" width={505} height={358} />
+          <Image src='/pets.png' alt="Imagem" width={505} height={358} />
         </div>
 
         <div className="flex justify-center space-x-4 pb-4 bg-white">
@@ -50,7 +50,7 @@ const Componente = () => {
               <Image src='/image4.png' alt="Imagem" width={60} height={60} className="rounded-full" />
             </div>
             <div className="bg-gray-200 p-3 rounded-lg">
-              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Dificuldades com o benefício assistencial, você não está sozinho, posso ajudá-lo?</p>
+              <p className="font-nunito text-xl text-gray-800 text-justify hyphenate">Dificuldades com animais e a responsabilidade civil, você não está sozinha, posso ajudá-la?</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Componente = () => {
     return(
       <>
         <div className="flex justify-center space-x-4 py-0 bg-white border-b border-slate-700 shadow-2xl">
-          <Image src='/loas.png' alt="Imagem" width={1011} height={716} />
+          <Image src='/pets.png' alt="Imagem" width={1011} height={716} />
         </div>
 
         <div className="flex justify-center space-x-4 py-3 bg-white border-b border-slate-700 shadow-2xl">
@@ -89,7 +89,7 @@ const Componente = () => {
               <Image src='/image4.png' alt="Imagem" width={90} height={90} className="rounded-full" />
             </div>
             <div className="bg-gray-200 p-3 rounded-lg">
-              <p className="font-nunito text-base text-gray-800 text-justify hyphenate">Dificuldades com o benefício assistencial, você não está sozinho, posso ajudá-lo?</p>
+              <p className="font-nunito text-base text-gray-800 text-justify hyphenate">Dificuldades com animais e a responsabilidade civil, você não está sozinha, posso ajudá-la?</p>
             </div>
           </div>
         </div>
